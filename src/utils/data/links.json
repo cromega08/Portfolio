@@ -1,0 +1,44 @@
+[
+	{
+		"value": "https://github.com/Cromega08",
+		"icon": "/src/assets/github.svg",
+		"text": "Cromega08",
+		"typeOfValue": "url"
+	},
+	{
+		"value": "https://codepen.io/cromega08",
+		"icon": "/src/assets/codepen.svg",
+		"text": "CODEPEN",
+		"typeOfValue": "url"
+	},
+	{
+		"value": "https://www.linkedin.com/in/crjrg/",
+		"icon": "/src/assets/linkedin.svg",
+		"text": "LinkedIn",
+		"typeOfValue": "url"
+	},
+	{
+		"value": "#",
+		"icon": "/src/assets/email.svg",
+		"text": "LET's TALK!",
+		"typeOfValue": "email"
+	},
+	{
+		"value": "cr.jrg08@gmail.com",
+		"icon": "/src/assets/at.svg",
+		"text": "E-mail",
+		"typeOfValue": "clipboard"
+	},
+	{
+		"value": "+573229258201",
+		"icon": "/src/assets/cellphone.svg",
+		"text": "Cellphone",
+		"typeOfValue": "clipboard"
+	},
+	{
+		"value": "/src/utils/data/cv_cjrg.pdf",
+		"icon": "/src/assets/file-download.svg",
+		"text": "CV",
+		"typeOfValue": "url"
+	}
+]
