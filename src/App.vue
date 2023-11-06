@@ -13,7 +13,7 @@ export default {
 		}
 	},
 	methods: {
-		openDialog(value) {
+		showDialog(value) {
 			this.dialogOpen = value
 		}
 	}
@@ -24,8 +24,8 @@ export default {
 <template>
   <v-app>
     <v-main>
-		<Main :open-dialog="dialogOpen"/>
-		<Footer @openDialog="value => openDialog(value)"/>
+		<Main :open-dialog="dialogOpen" @openDialog="value => showDialog(value)"/>
+		<Footer @openDialog="value => showDialog(value)"/>
     </v-main>
   </v-app>
 </template>
