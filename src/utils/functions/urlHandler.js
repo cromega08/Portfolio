@@ -7,7 +7,6 @@ export default class URLHandler {
 	}
 
 	static openURL(url) {
-		if (this.isValidURL(url)) window.open(url, "_blank")
-		else LogHandler.alertError("URL is invalid, unable to open link", new Error(`${url} is invalid and can't be open`))
+		window.open(url, "_blank")
 	}
 }
