@@ -28,10 +28,10 @@ export default {
 </script>
 
 <template>
-	<v-footer class="d-flex mx-5 my-8 flex-wrap justify-center">
-		<v-btn class="ma-1" size="x-large" variant="tonal" density="comfortable" rounded="xl" v-for="link in links" color="info" @click="footerActions(link)">
+	<v-footer class="w-100 h-0 d-flex mx-5 my-8 flex-wrap justify-center align-self-end">
+		<v-btn class="ma-1" size="large" variant="tonal" density="comfortable" rounded="xl" v-for="link in links" color="info" @click="footerActions(link)">
 			<Icon :svg-path="link.icon"/>
-			<span class="ml-2">{{ link.text }}</span>
+			<span class="ml-1 text-button">{{ link.text }}</span>
 		</v-btn>
 	</v-footer>
 </template>
