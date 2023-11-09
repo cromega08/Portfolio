@@ -2,12 +2,9 @@
 import EmailJsHandler from '/src/utils/functions/emailJsHandler';
 
 export default {
-	props: {
-		openDialog: Boolean
-	},
 	data() {
 		return {
-			dialog: false,
+			dialog: true,
 			isLoading: false,
 			isValid: false,
 			email: "",
@@ -70,9 +67,6 @@ export default {
 
 			this.closeDialog()
 		}
-	},
-	beforeUpdate() {
-		this.dialog = this.openDialog
 	}
 }
 </script>
