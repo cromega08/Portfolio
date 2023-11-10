@@ -31,10 +31,16 @@ export default {
 
 <template>
 	<v-app>
-	    <v-main class="h-100 w-100 py-16 overflow-hidden mx-auto d-flex flex-column">
+	    <v-main class="h-100 w-100 py-16 overflow-hidden mx-auto d-flex flex-column bg-grey-darken-4">
 			<Header :current-section="currentSection" :titles-data="sectionsTitles" @selectSection="section => selectSection(section)"/>
 			<Main class="overflow-y-auto" :sections-data="sections" :open-dialog="dialogOpen" @openDialog="value => showDialog(value)"/>
 			<Footer @openDialog="value => showDialog(value)"/>
 	    </v-main>
 	</v-app>
 </template>
+
+<style>
+*::-webkit-scrollbar {
+	display: none;
+}
+</style>

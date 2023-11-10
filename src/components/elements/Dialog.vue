@@ -76,13 +76,14 @@ export default {
 		<v-dialog
 			v-model="dialog"
 			persistent
-			:overlay="false"
+			:overlay="true"
 			max-width="1024"
 			transition="dialog-transition"
+			class="bg-blue-grey-darken-4"
 		>
 			<v-card>
-				<v-card-title primary-title>
-					<p class="text-h5">Fill the form to send me an e-mail &#x1F601;</p>
+				<v-card-title class="bg-blue-gray-darken-4">
+					<p class="text-h5 bg-blue-gray-darken-4">Fill the form to send me an e-mail &#x1F601;</p>
 				</v-card-title>
 			</v-card>
 			<v-card-text>

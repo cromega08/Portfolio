@@ -66,14 +66,14 @@ export default {
 </script>
 
 <template>
-	<header class="w-100 px-7 py-5 d-flex sky">
+	<header class="w-100 px-3 py-5 d-flex bg-grey-darken-4 sky">
 		<Icon class="mx-5" :svgPath="logo" />
 		<h1 class="text-h4">{{ currentTextDisplay }}</h1>
 		<v-spacer></v-spacer>
-		<v-tabs v-if="!isPortrait" fixed-tabs>
+		<!-- <v-tabs v-if="!isPortrait" fixed-tabs>
 			<v-tab v-for="title in titles" @click="selectSection(title)">{{ title }}</v-tab>
 		</v-tabs>
-		<v-btn icon="mdi-menu" v-if="isPortrait" @click="invertDrawer()" />
+		<v-btn icon="mdi-menu" class="bg-red-accent-4" v-if="isPortrait" @click="invertDrawer()" />
 		<v-navigation-drawer v-model="drawer" location="bottom" temporary>
 			<v-list lines="one">
 				<v-list-item :key="close" :title="close" @click="invertDrawer()">
@@ -84,7 +84,7 @@ export default {
 				</v-list-item>
 				<v-list-item v-for="title in titles" :key="title" :title="title" @click="selectSection(title)" />
 			</v-list>
-		</v-navigation-drawer>
+		</v-navigation-drawer> -->
 	</header>
 </template>
 

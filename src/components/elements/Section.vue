@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-	<v-card class="my-5 h-auto">
+	<v-card class="my-5 h-auto bg-blue-grey-darken-4">
 		<v-card-title primary-title class="text-center justify-center align-center pa-5">
 			<h3 class="font-weight-bold text-h4">{{ title }}</h3>
 		</v-card-title>
@@ -35,7 +35,7 @@ export default {
 			<v-window-item v-for="tab in tabs" :key="tab.title" :value="tab.title">
 				<v-container class="d-flex overflow-x-auto w-100" fluid>
 					<v-col v-for="item in tab.content" class="d-flex justify-center">
-						<v-card class="card h-100 d-flex flex-column">
+						<v-card class="card h-100 d-flex flex-column bg-red-accent-4">
 							<v-card-title v-if="valueNotNull(item.title)" class="text-center">
 								{{ item.title }}
 							</v-card-title>

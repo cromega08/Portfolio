@@ -44,22 +44,22 @@ export default {
 </script>
 
 <template>
-	<v-footer class="w-100 d-flex flex-wrap justify-center align-self-end land">
-		<v-btn v-if="!isPortrait" class="ma-1" size="large" variant="tonal" density="comfortable" rounded="xl"
-			v-for="link in links" color="info" @click="footerActions(link)">
+	<v-footer class="w-100 py-5 d-flex flex-wrap justify-center align-self-end bg-grey-darken-4 land">
+		<v-btn v-if="!isPortrait" class="ma-1 bg-red-accent-4" size="large" variant="tonal" density="comfortable" rounded="xl"
+			v-for="link in links" @click="footerActions(link)">
 			<Icon :svg-path="link.icon" />
 			<span class="ml-1 text-button">{{ link.text }}</span>
 		</v-btn>
-		<v-btn icon="mdi-menu" v-if="isPortrait" @click="invertDrawer()" />
-		<v-navigation-drawer v-model="drawer" location="bottom" temporary>
+		<v-btn icon="mdi-menu" class="bg-red-accent-4" v-if="isPortrait" @click="invertDrawer()" />
+		<v-navigation-drawer class="bg-blue-grey-darken-4 h-75" v-model="drawer" location="bottom" temporary>
 			<v-list lines="one">
-				<v-list-item :key="close" :title="close" @click="invertDrawer()">
+				<v-list-item class="bg-red-accent-4" :key="close" :title="close" @click="invertDrawer()">
 					<template v-slot:prepend>
 						<v-icon icon="mdi-close"/>
 					</template>
 					<v-list-item-title v-text="'Close'" />
 				</v-list-item>
-				<v-list-item v-for="link in links" :key="title" :title="title" @click="footerActions(link)">
+				<v-list-item class="bg-red-accent-4 my-2" v-for="link in links" :key="title" :title="title" @click="footerActions(link)">
 					<template v-slot:prepend>
 						<Icon :svg-path="link.icon" />
 					</template>
