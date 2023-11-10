@@ -7,8 +7,7 @@
 				"content": [
 					{
 						"title": null,
-						"image": null,
-						"content": "As a versatile Fullstack Developer and experienced Android Developer, I am proficient in various programming languages including HTML/CSS/JS, PHP, Python3, Java, XML, and SQL.<br/>My development philosophy is centered on creating modern, user-centered, and fully optimized applications that align with green design principles. My attention to detail enables me to craft fully functional applications that drive user engagement and experience.<br/>Let me bring my innovative approach to your development team, for delivering the best possible outcomes.",
+						"content": "As a versatile Fullstack Developer and experienced Android Developer, I am proficient in various programming languages including HTML/CSS/JS, PHP, Python3, Java, XML, and SQL.<br/><br/>My development philosophy is centered on creating modern, user-centered, and fully optimized applications that align with green design principles. My attention to detail enables me to craft fully functional applications that drive user engagement and experience.<br/><br/>Let me bring my innovative approach to your development team, for delivering the best possible outcomes.",
 						"url": null
 					}
 				]
@@ -18,8 +17,7 @@
 				"content": [
 					{
 						"title": null,
-						"image": null,
-						"content": "I'm a lover of the knowledge, trying to learn everything I can, just as a hobby.<br/>Was the recipient of a scholarship and best \"State Test\" of my high-school graduation (top 50 in my city).<br/> On absolute leisure, I love the anime, manga, videogames and comical \"K-Dramas\".",
+						"content": "I'm a lover of the knowledge, trying to learn everything I can, just as a hobby.<br/><br/>Was the recipient of a scholarship and best \"State Test\" of my high-school graduation (top 50 in my city).<br/><br/> On absolute leisure, I love the anime, manga, videogames and comical \"K-Dramas\".",
 						"url": null
 					}
 				]
@@ -35,7 +33,7 @@
 					{
 						"title": "Bluesoft Technology S.A.S.",
 						"image": "/src/assets/bluesoft.svg",
-						"content": "Android Developer - Current<br/>Worked as an \"Android Developer\" of enterprise projects, ensuring seamless integration with existing systems and delivering exceptional UX/UI.<br/>Led activities of analysis, design, development, testing, and deployment of functional applications, being involved in complete project lifecycle.<br/>Also, collaborated with cross-functional teams to optimize and maintain previously developed software, ensuring smooth operations and minimizing technical disruptions.",
+						"content": "Android Developer - Current<br/><br/>Worked as an \"Android Developer\" of enterprise projects, ensuring seamless integration with existing systems and delivering exceptional UX/UI.<br/><br/>Led activities of analysis, design, development, testing, and deployment of functional applications, being involved in complete project lifecycle.<br/><br/>Also, collaborated with cross-functional teams to optimize and maintain previously developed software, ensuring smooth operations and minimizing technical disruptions.",
 						"url": "https://bluesoft.com.co"
 					}
 				]
@@ -46,20 +44,17 @@
 				"content": [
 					{
 						"title": "Shoes E-Commerce",
-						"image": null,
-						"content": "<strong>Grade Project</strong> for my <a href='https://certificadosmisiontic.unab.edu.co/mod/customcert/verify_certificate.php?contextid=58347&code=6oQypdWH6C&qrcode=1' target='_blank'><strong>Technician on Web Development</strong> degree</a>.<br/>Led a team to develop a functional e-commerce site to sell shoes of different types.<br/>The project include Frontend and Backend Development, developed with <em>HTML/CSS/JS</em>, <em>Bootstrap</em>, <em>React</em> and <em>NodeJS</em>, and the <em>SCRUM</em> development methodology was applied.",
+						"content": "<strong>Grade Project</strong> for my <a href='https://certificadosmisiontic.unab.edu.co/mod/customcert/verify_certificate.php?contextid=58347&code=6oQypdWH6C&qrcode=1' target='_blank'><strong>Technician on Web Development</strong> degree</a>.<br/><br/>Led a team to develop a functional e-commerce site to sell shoes of different types.<br/><br/>The project include Frontend and Backend Development, developed with <em>HTML/CSS/JS</em>, <em>Bootstrap</em>, <em>React</em> and <em>NodeJS</em>, and the <em>SCRUM</em> development methodology was applied.",
 						"url": null
 					},
 					{
 						"title": "Unrevelea",
-						"image": null,
-						"content": "<strong>Grade Project</strong> for my <a href='https://certificadosmisiontic.unab.edu.co/mod/customcert/my_certificates.php?downloadcert=1&userid=20782&certificateid=25' target='_blank'><strong>Diploma on Mobile Application Development</strong> degree</a>.<br/>Developed a mobile Android application \"to publish and read the most embarrassing or weird secrets of the people out there\".<br/>The project was developed using native Android tools, written on <em>Java</em> and <em>XML</em>, along with a <em>Firebase</em> instance for <em>NoSQL Database</em> management and <em>User Authentication</em>.",
+						"content": "<strong>Grade Project</strong> for my <a href='https://certificadosmisiontic.unab.edu.co/mod/customcert/my_certificates.php?downloadcert=1&userid=20782&certificateid=25' target='_blank'><strong>Diploma on Mobile Application Development</strong> degree</a>.<br/><br/>Developed a mobile Android application \"to publish and read the most embarrassing or weird secrets of the people out there\".<br/><br/>The project was developed using native Android tools, written on <em>Java</em> and <em>XML</em>, along with a <em>Firebase</em> instance for <em>NoSQL Database</em> management and <em>User Authentication</em>.",
 						"url": "https://github.com/cromega08/Unrevelea"
 					},
 					{
 						"title": "Mewuk",
-						"image": null,
-						"content": "<strong>Practice Project</strong> for my <a href='https://certificadosmisiontic.unab.edu.co/mod/customcert/my_certificates.php?downloadcert=1&userid=20782&certificateid=25' target='_blank'><strong>Diploma on Mobile Application Development</strong> degree</a>.<br/>Developed a mobile Android application \"that contains beginner translations for Miwok language\".<br/>The project was developed using native Android tools, written on <em>Java</em> and <em>XML</em>.",
+						"content": "<strong>Practice Project</strong> for my <a href='https://certificadosmisiontic.unab.edu.co/mod/customcert/my_certificates.php?downloadcert=1&userid=20782&certificateid=25' target='_blank'><strong>Diploma on Mobile Application Development</strong> degree</a>.<br/><br/>Developed a mobile Android application \"that contains beginner translations for Miwok language\".<br/><br/>The project was developed using native Android tools, written on <em>Java</em> and <em>XML</em>.",
 						"url": "https://github.com/cromega08/Unrevelea"
 					}
 				]
@@ -69,50 +64,42 @@
 				"content": [
 					{
 						"title": "ComPoints",
-						"image": null,
-						"content": "<strong>Personal Project</strong> developed by me.<br/>Developed a mobile Android Application \"to keep track of score on different type of competitions\".<br/>The project was developed using modern Android tools, written on <em>Kotlin</em> using the <em>Jetpack Compose</em> framework.",
+						"content": "<strong>Personal Project</strong> developed by me.<br/><br/>Developed a mobile Android Application \"to keep track of score on different type of competitions\".<br/><br/>The project was developed using modern Android tools, written on <em>Kotlin</em> using the <em>Jetpack Compose</em> framework.",
 						"url": "https://github.com/cromega08/ComPoints"
 					},
 					{
 						"title": "EditMark",
-						"image": null,
-						"content": "<strong>Personal Project</strong> developed by me.<br/>Developed a Web Application \"to write, edit and render Markdown text and files directly on your browser\".<br/>The project was developed using <em>HTML/JS</em>, embedded on the <em>Vue</em> frontend framework, specifically the <em>Vuetify</em> framework (extension of Vue).",
+						"content": "<strong>Personal Project</strong> developed by me.<br/><br/>Developed a Web Application \"to write, edit and render Markdown text and files directly on your browser\".<br/><br/>The project was developed using <em>HTML/JS</em>, embedded on the <em>Vue</em> frontend framework, specifically the <em>Vuetify</em> framework (extension of Vue).",
 						"url": "https://github.com/cromega08/EditMark"
 					},
 					{
 						"title": "PHPassword",
-						"image": null,
-						"content": "<strong>Personal Project</strong> developed by me.<br/>Developed a Web Application \"to generate and validate your password\".<br/>The project was developed using <em>PHP</em> and <em>JS</em> programming languages, and styled with <em>Bootstrap</em>.",
+						"content": "<strong>Personal Project</strong> developed by me.<br/><br/>Developed a Web Application \"to generate and validate your password\".<br/><br/>The project was developed using <em>PHP</em> and <em>JS</em> programming languages, and styled with <em>Bootstrap</em>.",
 						"url": "https://github.com/cromega08/PHPassword"
 					},
 					{
 						"title": "Pomodoro",
-						"image": null,
-						"content": "<strong>Personal Project</strong> developed by me.<br/>Developed a Desktop Application that is a \"time tracker based in Pomodoro technique\".<br/>The project was developed using entirely <em>Java</em>, with <em>Swing</em> UI framework.",
+						"content": "<strong>Personal Project</strong> developed by me.<br/><br/>Developed a Desktop Application that is a \"time tracker based in Pomodoro technique\".<br/><br/>The project was developed using entirely <em>Java</em>, with <em>Swing</em> UI framework.",
 						"url": "https://github.com/cromega08/Pomodoro"
 					},
 					{
 						"title": "Classic Games",
-						"image": null,
-						"content": "<strong>Personal Project</strong> developed by me.<br/>Developed a group of Web Games that are \"implementation of popular games known by everyone\".<br/>The group of projects was developed using basic <em>HTML/CSS/JS</em> languages.",
+						"content": "<strong>Personal Project</strong> developed by me.<br/><br/>Developed a group of Web Games that are \"implementation of popular games known by everyone\".<br/><br/>The group of projects was developed using basic <em>HTML/CSS/JS</em> languages.",
 						"url": "https://github.com/cromega08?tab=projects"
 					},
 					{
 						"title": "ChaThon",
-						"image": null,
-						"content": "<strong>Personal Project</strong> developed by me.<br/>Developed a \"Command Line Interface (CLI)\" Application that \"is a CLI chat application based on P2P connections with Websockets\".<br/>The project was developed using native <em>Python</em> libraries and distributed for <em>Linux systems</em>.",
+						"content": "<strong>Personal Project</strong> developed by me.<br/><br/>Developed a \"Command Line Interface (CLI)\" Application that \"is a CLI chat application based on P2P connections with Websockets\".<br/><br/>The project was developed using native <em>Python</em> libraries and distributed for <em>Linux systems</em>.",
 						"url": "https://github.com/cromega08/ChaThon"
 					},
 					{
 						"title": "JaTube",
-						"image": null,
-						"content": "<strong>Personal Project</strong> developed by me.<br/>Developed a Desktop Application that is a \"functional Youtube downloader\".<br/>The project was developed using <em>Java</em> and <em>Python</em> programming languages, along with the <em>Swing</em> UI framework.",
+						"content": "<strong>Personal Project</strong> developed by me.<br/><br/>Developed a Desktop Application that is a \"functional Youtube downloader\".<br/><br/>The project was developed using <em>Java</em> and <em>Python</em> programming languages, along with the <em>Swing</em> UI framework.",
 						"url": "https://github.com/cromega08/jatube"
 					},
 					{
 						"title": "Desktopfy",
-						"image": null,
-						"content": "<strong>Personal Project</strong> developed by me.<br/>Developed a \"Command Line Interface (CLI)\" Application that \"use BASH scripting to add shortcuts to executable files in Linux OS\".<br/>The project was developed using only <em>BASH</em> programming language, and distributed for <em>Linux systems</em>.",
+						"content": "<strong>Personal Project</strong> developed by me.<br/><br/>Developed a \"Command Line Interface (CLI)\" Application that \"use BASH scripting to add shortcuts to executable files in Linux OS\".<br/><br/>The project was developed using only <em>BASH</em> programming language, and distributed for <em>Linux systems</em>.",
 						"url": "https://github.com/cromega08/desktopfy"
 					}
 				]
@@ -127,20 +114,17 @@
 				"content": [
 					{
 						"title": "Diploma on Android Mobile Application Development",
-						"image": null,
-						"content": "<strong>University Program</strong> focused on the instruction about software development and mobile application development, making use of technologies such as <em>Android tools</em>, <em>Java</em> and <em>Firebase</em>.<br/>This through the grant of the <strong>ICT Ministry of Colombia</strong> for the program \"MisionTIC - 2022\".",
+						"content": "<strong>University Program</strong> focused on the instruction about software development and mobile application development, making use of technologies such as <em>Android tools</em>, <em>Java</em> and <em>Firebase</em>.<br/><br/>This through the grant of the <strong>ICT Ministry of Colombia</strong> for the program \"MisionTIC - 2022\".",
 						"url": "https://certificadosmisiontic.unab.edu.co/mod/customcert/my_certificates.php?downloadcert=1&userid=20782&certificateid=25"
 					},
 					{
 						"title": "Technician on Web Development",
-						"image": null,
-						"content": "<strong>University Program</strong> focused on the instruction about software development and web application development, making use of technologies such as <em>HTML/CSS/JS</em> and <em>Java</em>, with frameworks such as <em>React</em>, <em>Bootstrap</em> and <em>SpringBoot</em>.<br/>This through the grant of the <strong>ICT Ministry of Colombia</strong> for the program \"MisionTIC - 2022\".",
+						"content": "<strong>University Program</strong> focused on the instruction about software development and web application development, making use of technologies such as <em>HTML/CSS/JS</em> and <em>Java</em>, with frameworks such as <em>React</em>, <em>Bootstrap</em> and <em>SpringBoot</em>.<br/><br/>This through the grant of the <strong>ICT Ministry of Colombia</strong> for the program \"MisionTIC - 2022\".",
 						"url": "https://certificadosmisiontic.unab.edu.co/mod/customcert/verify_certificate.php?contextid=58347&code=6oQypdWH6C&qrcode=1"
 					},
 					{
 						"title": "Green Digital Skills",
-						"image": null,
-						"content": "<strong>Online Program</strong> about the development of \"Green Digital Skills\" applicable for jobs.<br/>Focused on the application of this skills on the real world, learned about the impact of modern technologies and how to develop digital products with minimum impact on environment, applying sustainable methodologies to design regenerative and resilient software.",
+						"content": "<strong>Online Program</strong> about the development of \"Green Digital Skills\" applicable for jobs.<br/><br/>Focused on the application of this skills on the real world, learned about the impact of modern technologies and how to develop digital products with minimum impact on environment, applying sustainable methodologies to design regenerative and resilient software.",
 						"url": "https://learning.inco-group.co/admin/tool/certificate/index.php?code=7174765194CR"
 					}
 				]
@@ -150,14 +134,12 @@
 				"content": [
 					{
 						"title": "Business Management Technician",
-						"image": null,
-						"content": "<strong>Highschool Program</strong> focused on the education about administrative and accounting knowledge.<br/>Certified as a technician specialized on entrepreneurship projects and expansion strategies, as well as brand positioning.",
+						"content": "<strong>Highschool Program</strong> focused on the education about administrative and accounting knowledge.<br/><br/>Certified as a technician specialized on entrepreneurship projects and expansion strategies, as well as brand positioning.",
 						"url": null
 					},
 					{
 						"title": "Commercial and Financial Operations Accounting Technician",
-						"image": null,
-						"content": "<strong>University Program</strong> focused on the education about administrative and accounting knowledge.<br/>Certified as a technician capable of performing positions such as administrative assistant, accounting assistant and treasury assistant.",
+						"content": "<strong>University Program</strong> focused on the education about administrative and accounting knowledge.<br/><br/>Certified as a technician capable of performing positions such as administrative assistant, accounting assistant and treasury assistant.",
 						"url": null
 					}
 				]
@@ -172,20 +154,17 @@
 				"content": [
 					{
 						"title": "Languages",
-						"image": null,
-						"content": "Java<br/>Kotlin<br/>XML",
+						"content": "Java<br/><br/>Kotlin<br/><br/>XML",
 						"url": null
 					},
 					{
 						"title": "Frameworks",
-						"image": null,
 						"content": "Jetpack Compose",
 						"url": null
 					},
 					{
 						"title": "Tools",
-						"image": null,
-						"content": "Gradle<br/>Android Studio<br/>Google Play Services and Platforms",
+						"content": "Gradle<br/><br/>Android Studio<br/><br/>Google Play Services and Platforms",
 						"url": null
 					}
 				]
@@ -195,20 +174,17 @@
 				"content": [
 					{
 						"title": "Languages",
-						"image": null,
-						"content": "HTML<br/>CSS<br/>JS",
+						"content": "HTML<br/><br/>CSS<br/><br/>JS",
 						"url": null
 					},
 					{
 						"title": "Frameworks",
-						"image": null,
-						"content": "Vue<br/>Vuetify<br/>Bootstrap<br/>UIKit<br/>Pico.CSS",
+						"content": "Vue<br/><br/>Vuetify<br/><br/>Bootstrap<br/><br/>UIKit<br/><br/>Pico.CSS",
 						"url": null
 					},
 					{
 						"title": "Tools",
-						"image": null,
-						"content": "Vite<br/>npm",
+						"content": "Vite<br/><br/>npm",
 						"url": null
 					}
 				]
@@ -218,20 +194,17 @@
 				"content": [
 					{
 						"title": "Languages",
-						"image": null,
-						"content": "Java<br/>Kotlin<br/>PHP<br/>JS<br/>JSON<br/>XML",
+						"content": "Java<br/><br/>Kotlin<br/><br/>PHP<br/><br/>JS<br/><br/>JSON<br/><br/>XML",
 						"url": null
 					},
 					{
 						"title": "Frameworks",
-						"image": null,
-						"content": "Spring Boot<br/>NodeJS",
+						"content": "Spring Boot<br/><br/>NodeJS",
 						"url": null
 					},
 					{
 						"title": "Tools",
-						"image": null,
-						"content": "Maven<br/>Gradle<br/>npm",
+						"content": "Maven<br/><br/>Gradle<br/><br/>npm",
 						"url": null
 					}
 				]
@@ -241,14 +214,12 @@
 				"content": [
 					{
 						"title": "Relational",
-						"image": null,
-						"content": "MySQL<br/>Postgres<br/>SQLite",
+						"content": "MySQL<br/><br/>Postgres<br/><br/>SQLite",
 						"url": null
 					},
 					{
 						"title": "Non Relational",
-						"image": null,
-						"content": "MongoBD<br/>Firestore (Firebase)",
+						"content": "MongoBD<br/><br/>Firestore (Firebase)",
 						"url": null
 					}
 				]
@@ -258,14 +229,12 @@
 				"content": [
 					{
 						"title": "Cloud",
-						"image": null,
-						"content": "Firebase<br/>Google Cloud",
+						"content": "Firebase<br/><br/>Google Cloud",
 						"url": null
 					},
 					{
 						"title": "Build Tools",
-						"image": null,
-						"content": "Gradle<br/>Maven<br/>npm",
+						"content": "Gradle<br/><br/>Maven<br/><br/>npm",
 						"url": null
 					}
 				]
@@ -275,13 +244,11 @@
 				"content": [
 					{
 						"title": "Native",
-						"image": null,
 						"content": "Spanish",
 						"url": null
 					},
 					{
 						"title": "Intermediate",
-						"image": null,
 						"content": "English",
 						"url": null
 					}
