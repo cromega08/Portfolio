@@ -20,7 +20,7 @@ export default {
 	},
 	methods: {
 		showDialog(value) { this.dialogOpen = value },
-		selectSection(section) { this.currentSection = section }
+		selectSection(section) { this.currentSection = section; console.log(this.currentSection) }
 	},
 	created() {
 		this.sectionsTitles = sections.map(section => section.title)
@@ -31,14 +31,10 @@ export default {
 
 <template>
 	<v-app>
-	    <v-main class="h-100 w-100 overflow-hidden mx-auto d-flex flex-column">
+	    <v-main class="h-100 w-100 py-16 overflow-hidden mx-auto d-flex flex-column">
 			<Header :current-section="currentSection" :titles-data="sectionsTitles" @selectSection="section => selectSection(section)"/>
-			<Main :sections-data="sections" :open-dialog="dialogOpen" @openDialog="value => showDialog(value)"/>
+			<Main class="overflow-y-auto" :sections-data="sections" :open-dialog="dialogOpen" @openDialog="value => showDialog(value)"/>
 			<Footer @openDialog="value => showDialog(value)"/>
 	    </v-main>
 	</v-app>
 </template>
-
-<style>
-/* * {outline: solid red;} */
-</style>

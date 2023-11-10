@@ -1,44 +1,8 @@
-# default
+# TODO
 
-## Project setup
-
-```
-# yarn
-yarn
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-# yarn
-yarn dev
-
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-```
-
-### Compiles and minifies for production
-
-```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
+- Create typing animations for header and profession
+- Create carrousel for images along the profession
+- For each section, make a tab structure that works automatically with a json
+- attach the header and footer
+- Implement the auto scroll linking hte header and main elements
+- Take photos
