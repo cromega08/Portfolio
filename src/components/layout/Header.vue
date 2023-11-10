@@ -37,9 +37,9 @@ export default {
 		<Icon class="mx-5" :svgPath="logo"/>
 		<h1 class="text-h4">Cromega</h1>
 		<v-spacer></v-spacer>
-		<div class="d-flex align-center">
-			<v-btn class="px-4 h-100" v-for="title in titles" :variant="isCurrent(title)" value="title" @click="selectSection(title)">{{ title }}</v-btn>
-		</div>
+		<v-tabs fixed-tabs>
+			<v-tab v-for="title in titles" @click="selectSection(title)">{{ title }}</v-tab>
+		</v-tabs>
 	</header>
 </template>
 
