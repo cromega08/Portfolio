@@ -1,6 +1,6 @@
 [
-	"/src/assets/cromega_1.png",
-	"/src/assets/cromega_3.png",
-	"/src/assets/cromega_2.png",
-	"/src/assets/cromega_4.png"
+	"./cromega_1.png",
+	"./cromega_3.png",
+	"./cromega_2.png",
+	"./cromega_4.png"
 ]
