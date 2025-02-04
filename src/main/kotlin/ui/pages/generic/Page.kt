@@ -1,6 +1,7 @@
 package ui.pages.generic
 
 import androidx.compose.runtime.Composable
+import enums.UtilityButtonsInfo
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 import ui.navigation.NavigationPages
@@ -11,6 +12,8 @@ abstract class Page<C : Controller>(protected val controller: C)
     fun Body() {
         Div(
             attrs = {
+                classes(GlobalStyleSheet.bodyContainer)
+
                 onKeyUp { keyboardEvent ->
                     if (
                         (keyboardEvent.getNormalizedKey() == "ArrowRight") ||
@@ -34,20 +37,15 @@ abstract class Page<C : Controller>(protected val controller: C)
     protected fun PageHeader() =
         Header(
             attrs = {
-               style {
-                   padding(5.vmin)
+                classes(GlobalStyleSheet.paddingMedium, GlobalStyleSheet.flexboxCenteredDefault)
+                style {
+                   gridArea("h")
                }
             }
         ) {
             Nav(
                 attrs = {
-                    style {
-                        display(displayStyle = DisplayStyle.Flex)
-                        flexDirection(flexDirection = FlexDirection.Row)
-                        alignItems(alignItems = AlignItems.Center)
-                        justifyContent(justifyContent = JustifyContent.Center)
-                        gap(value = 2.vmin)
-                    }
+                    classes(GlobalStyleSheet.flexboxCenteredDefault, GlobalStyleSheet.flexboxRow)
                 }
             ) {
                 val pages: List<NavigationPages> = controller.navigationController.pages
@@ -58,8 +56,10 @@ abstract class Page<C : Controller>(protected val controller: C)
                           style {
                               if (controller.navigationController.isCurrentPage(page = page))
                               {
-                                  backgroundColor(Color.red)
+                                  backgroundColor(Color.white)
                               }
+
+                              fontSize(2.cssRem)
                           }
 
                           onClick {
@@ -80,26 +80,35 @@ abstract class Page<C : Controller>(protected val controller: C)
     protected fun PageFooter() =
         Footer(
             attrs = {
+                classes(GlobalStyleSheet.paddingMedium, GlobalStyleSheet.flexboxCenteredDefault)
                 style {
-                    display(displayStyle = DisplayStyle.Flex)
-                    alignItems(alignItems = AlignItems.Center)
-                    justifyContent(justifyContent = JustifyContent.Center)
+                    gridArea("f")
                 }
             }
         ) {
-            Button(
+            Div(
                 attrs = {
-                    style {
-                        display(displayStyle = DisplayStyle.Flex)
-                        alignItems(alignItems = AlignItems.Center)
-                        justifyContent(justifyContent = JustifyContent.Center)
-                        padding(1.vmin)
-                    }
+                    classes(GlobalStyleSheet.flexboxCenteredDefault, GlobalStyleSheet.flexboxRow)
                 }
             ) {
-                Img(
-                    src = "icons\\email.svg"
-                )
+                for (utilityButtonInfo in UtilityButtonsInfo.asList()) {
+                    A (
+                        href = utilityButtonInfo.href,
+                        attrs = {
+                            attr("target", "_blank")
+                            classes(GlobalStyleSheet.flexboxCenteredDefault, GlobalStyleSheet.utilityButtons)
+                        }
+                    ) {
+                        Img(
+                            src = utilityButtonInfo.icon,
+                            alt = utilityButtonInfo.text,
+                            attrs = {
+                                title(utilityButtonInfo.text)
+                                classes(GlobalStyleSheet.utilityButtonsIcon)
+                            }
+                        )
+                    }
+                }
             }
         }
 }

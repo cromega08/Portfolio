@@ -106,6 +106,8 @@ fabric.properties
 !.idea/runConfigurations
 
 ### Kotlin ###
+.kotlin
+
 # Compiled class file
 *.class
 
