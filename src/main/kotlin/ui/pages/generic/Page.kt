@@ -2,6 +2,8 @@ package ui.pages.generic
 
 import androidx.compose.runtime.Composable
 import enums.UtilityButtonsInfo
+import org.jetbrains.compose.web.attributes.ATarget
+import org.jetbrains.compose.web.attributes.target
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 import ui.navigation.NavigationPages
@@ -95,7 +97,7 @@ abstract class Page<C : Controller>(protected val controller: C)
                     A (
                         href = utilityButtonInfo.href,
                         attrs = {
-                            attr("target", "_blank")
+                            target(ATarget.Blank)
                             classes(GlobalStyleSheet.flexboxCenteredDefault, GlobalStyleSheet.utilityButtons)
                         }
                     ) {

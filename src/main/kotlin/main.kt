@@ -4,6 +4,10 @@ import org.jetbrains.compose.web.css.Style
 import org.jetbrains.compose.web.renderComposable
 import ui.navigation.NavigationController
 import ui.navigation.NavigationPages
+import ui.pages.experience.ExperienceAnimations
+import ui.pages.experience.ExperienceController
+import ui.pages.experience.ExperiencePage
+import ui.pages.experience.ExperienceStyleSheet
 import ui.pages.generic.GlobalAnimations
 import ui.pages.generic.GlobalStyleSheet
 import ui.pages.home.HomeAnimations
@@ -20,6 +24,11 @@ fun main() {
 
         when(navigationController.currentPage)
         {
+            NavigationPages.Experience -> {
+                Style(ExperienceAnimations)
+                Style(ExperienceStyleSheet)
+                ExperiencePage(ExperienceController(navigationController)).Body()
+            }
             else -> {
                 Style(HomeAnimations)
                 Style(HomeStyleSheet)
