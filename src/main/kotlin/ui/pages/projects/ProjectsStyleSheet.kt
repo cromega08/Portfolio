@@ -56,12 +56,6 @@ object ProjectsStyleSheet : StyleSheet()
     val projects by style {
         height(90.percent)
         width(90.percent)
-        padding(2.5.vmin)
-        display(DisplayStyle.Flex)
-        justifyContent(JustifyContent.Center)
-        alignItems(AlignItems.Start)
-        overflowY("scroll")
-        overflowX("hidden")
     }
 
     val project by style {

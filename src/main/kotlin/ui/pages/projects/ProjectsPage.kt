@@ -6,6 +6,7 @@ import org.jetbrains.compose.web.attributes.target
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.css.keywords.auto
 import org.jetbrains.compose.web.dom.*
+import ui.components.SectionScrollableFlexboxWrap
 import ui.pages.generic.GlobalStyleSheet
 import ui.pages.generic.Page
 
@@ -38,71 +39,64 @@ class ProjectsPage(controller: ProjectsController) : Page<ProjectsController>(co
                 classes(GlobalStyleSheet.flexboxCenteredDefault, GlobalStyleSheet.flexboxColumn, ProjectsStyleSheet.mainContainer)
             }
         ) {
-            Section(
+            SectionScrollableFlexboxWrap(
                 attrs = {
-                    classes(GlobalStyleSheet.flexboxRow, ProjectsStyleSheet.projects)
-                }
-            ) {
-                for(repository in controller.repositories)
-                {
-                    if (
-                        repository.private ||
-                        !repository.name.contains(other = controller.query, ignoreCase = true)
-                        ) continue
-
-                    Article(
+                    classes(ProjectsStyleSheet.projects)
+                },
+                dataForElements = controller.repositories.toList()
+            ) { repository ->
+                Article(
+                    attrs = {
+                        classes(ProjectsStyleSheet.project)
+                    }
+                ) {
+                    H1 { Text(repository.name) }
+                    A(
+                        href = repository.html_url,
                         attrs = {
-                            classes(ProjectsStyleSheet.project)
+                            target(ATarget.Blank)
+                        }
+                    ) { Text("Github Repository") }
+                    P(
+                        attrs = {
+                            style {
+                                width(100.percent)
+                            }
                         }
                     ) {
-                        H1 { Text(repository.name) }
-                        A(
-                            href = repository.html_url,
-                            attrs = {
-                                target(ATarget.Blank)
-                            }
-                        ) { Text("Github Repository") }
-                        P(
+                        if (repository.description != null) Text(repository.description)
+                        else Span(
                             attrs = {
                                 style {
-                                    width(100.percent)
+                                    color(Color.black)
+                                    opacity(80.percent)
                                 }
                             }
-                        ) {
-                            if (repository.description != null) Text(repository.description)
-                            else Span(
-                                attrs = {
-                                    style {
-                                        color(Color.black)
-                                        opacity(80.percent)
+                        ) { Text("No description available...") }
+                    }
+                    P(
+                        attrs = {
+                            style {
+                                width(100.percent)
+                                display(DisplayStyle.Flex)
+                                flexDirection(FlexDirection.Row)
+                                justifyContent(JustifyContent.SpaceBetween)
+                                alignItems(AlignItems.Center)
+                            }
+                        }
+                    ) {
+                        Small {
+                            if (repository.license != null)
+                                A(
+                                    href = repository.license.url,
+                                    attrs = {
+                                        target(ATarget.Blank)
                                     }
-                                }
-                            ) { Text("No description available...") }
+                                ) { Text(repository.license.name) }
+                            else Text("No license")
                         }
-                        P(
-                            attrs = {
-                                style {
-                                    width(100.percent)
-                                    display(DisplayStyle.Flex)
-                                    flexDirection(FlexDirection.Row)
-                                    justifyContent(JustifyContent.SpaceBetween)
-                                    alignItems(AlignItems.Center)
-                                }
-                            }
-                        ) {
-                            Small {
-                                if (repository.license != null)
-                                    A(
-                                        href = repository.license.url,
-                                        attrs = {
-                                            target(ATarget.Blank)
-                                        }
-                                    ) { Text(repository.license.name) }
-                                else Text("No license")
-                            }
 
-                            Small { Text(repository.created_at) }
-                        }
+                        Small { Text(repository.created_at) }
                     }
                 }
             }

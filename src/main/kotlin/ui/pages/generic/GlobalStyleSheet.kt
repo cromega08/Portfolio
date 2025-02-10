@@ -85,4 +85,14 @@ object GlobalStyleSheet : StyleSheet()
     val paddingMedium by style {
         padding(2.5.vmin)
     }
+
+    val sectionFlexboxWrap by style {
+        display(DisplayStyle.Flex)
+        justifyContent(JustifyContent.Center)
+        alignItems(AlignItems.Start)
+        flexWrap(FlexWrap.Wrap)
+        gap(3.vmin)
+        overflowY("scroll")
+        overflowX("hidden")
+    }
 }
