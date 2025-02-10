@@ -14,6 +14,10 @@ import ui.pages.home.HomeAnimations
 import ui.pages.home.HomeController
 import ui.pages.home.HomePage
 import ui.pages.home.HomeStyleSheet
+import ui.pages.projects.ProjectsAnimations
+import ui.pages.projects.ProjectsController
+import ui.pages.projects.ProjectsPage
+import ui.pages.projects.ProjectsStyleSheet
 
 fun main() {
     renderComposable(rootElementId = "root") {
@@ -28,6 +32,11 @@ fun main() {
                 Style(ExperienceAnimations)
                 Style(ExperienceStyleSheet)
                 ExperiencePage(ExperienceController(navigationController)).Body()
+            }
+            NavigationPages.Projects -> {
+                Style(ProjectsAnimations)
+                Style(ProjectsStyleSheet)
+                ProjectsPage(ProjectsController(navigationController)).Body()
             }
             else -> {
                 Style(HomeAnimations)
