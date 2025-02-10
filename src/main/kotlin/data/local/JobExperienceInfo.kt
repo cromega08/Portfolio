@@ -1,4 +1,4 @@
-package data
+package data.local
 
 import enums.ExperienceLevel
 import enums.JobContractType

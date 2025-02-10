@@ -1,7 +1,7 @@
 package ui.pages.experience
 
 import androidx.compose.runtime.Composable
-import data.jobExperiences
+import data.local.jobExperiences
 import org.jetbrains.compose.web.attributes.ATarget
 import org.jetbrains.compose.web.attributes.target
 import org.jetbrains.compose.web.css.*
