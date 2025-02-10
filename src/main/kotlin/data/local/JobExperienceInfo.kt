@@ -19,7 +19,7 @@ data class JobExperienceInfo(
     val source: String
 )
 
-val jobExperiences: List<JobExperienceInfo> = listOf(
+val jobExperiences: Array<JobExperienceInfo> = arrayOf(
     JobExperienceInfo(
         position = "Android Engineer",
         contractType = JobContractType.FULL_TIME,

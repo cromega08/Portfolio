@@ -1,7 +1,6 @@
 package ui.pages.experience
 
 import androidx.compose.runtime.Composable
-import data.local.jobExperiences
 import org.jetbrains.compose.web.attributes.ATarget
 import org.jetbrains.compose.web.attributes.target
 import org.jetbrains.compose.web.css.*
@@ -12,7 +11,7 @@ import ui.elements.Time
 import ui.pages.generic.GlobalStyleSheet
 import ui.pages.generic.Page
 
-class ExperiencePage(controller: ExperienceController) : Page<ExperienceController>(controller)
+class ExperiencesPage(controller: ExperiencesController) : Page<ExperiencesController>(controller)
 {
     @Composable
     override fun PageMain() =
@@ -26,7 +25,7 @@ class ExperiencePage(controller: ExperienceController) : Page<ExperienceControll
                     classes(ExperienceStyleSheet.timeline)
                 }
             ) {
-                jobExperiences.forEach { jobExperience ->
+                controller.experiences.forEach { jobExperience ->
                     Li(
                         attrs = {
                             classes(GlobalStyleSheet.paddingMedium, GlobalStyleSheet.flexboxCenteredDefault, GlobalStyleSheet.flexboxColumn, ExperienceStyleSheet.experience)
