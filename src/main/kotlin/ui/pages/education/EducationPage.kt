@@ -1,0 +1,56 @@
+package ui.pages.education
+
+import androidx.compose.runtime.Composable
+import org.jetbrains.compose.web.attributes.ATarget
+import org.jetbrains.compose.web.attributes.target
+import org.jetbrains.compose.web.dom.*
+import ui.components.SectionScrollableFlexboxWrap
+import ui.elements.Time
+import ui.pages.generic.Page
+
+class EducationPage(educationController: EducationController) : Page<EducationController>(educationController)
+{
+    @Composable
+    override fun PageMain() =
+        SectionScrollableFlexboxWrap(
+            attrs = {
+                classes(EducationStyleSheet.mainContainer)
+            },
+            dataForElements = controller.education.toList()
+        ) { education ->
+            Article(
+                attrs = {
+                    classes(EducationStyleSheet.education)
+                }
+            ) {
+                H1 { Text(education.title) }
+                H2 { Text("${education.educationLevel} - ${education.site}") }
+                P { Text("${education.institute} - ${education.location}") }
+                P {
+                    Time(
+                        datetime = education.startDate.toUTCString()
+                    ) {
+                        Text(education.startDate.toDateString())
+                    }
+                    Text(" - ")
+                    Time(
+                        datetime = education.endDate.toUTCString()
+                    ) {
+                        Text(education.endDate.toDateString())
+                    }
+                }
+                Ul {
+                    education.sources.forEach { source ->
+                        Li {
+                            A(
+                                href = source,
+                                attrs = {
+                                    target(ATarget.Blank)
+                                }
+                            ) { Text(source.split("\\").last()) }
+                        }
+                    }
+                }
+            }
+        }
+}
