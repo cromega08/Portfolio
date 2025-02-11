@@ -37,9 +37,20 @@ class ExperiencesPage(
                             }
                         }
                     ) {
-                        H1 { Text(jobExperience.position) }
-                        H2 { Text("${jobExperience.experienceLevel} - ${jobExperience.contractType} - ${jobExperience.site}") }
-                        H3 { Text("${jobExperience.company} - ${jobExperience.location}") }
+                        H1 { Text(stringResources get jobExperience.position) }
+                        H2 {
+                            Text(
+                            "${stringResources get jobExperience.experienceLevel.toLowercaseString()} - " +
+                                "${stringResources get jobExperience.contractType.toLowercaseString()} - " +
+                                    (stringResources get jobExperience.site.toLowercaseString())
+                            )
+                        }
+                        H3 {
+                            Text(
+                                "${stringResources get jobExperience.company} - " +
+                                        (stringResources get jobExperience.location)
+                            )
+                        }
                         P {
                             Time(
                                 datetime = jobExperience.startDate.toUTCString()
@@ -57,7 +68,7 @@ class ExperiencesPage(
 
                         Details {
                             Summary {
-                                Text("${jobExperience.description}.")
+                                Text("${stringResources get jobExperience.description}.")
                             }
                             Ul {
                                 jobExperience.activities.forEach { activity ->
@@ -69,7 +80,7 @@ class ExperiencesPage(
                                             }
                                         }
                                     ) {
-                                        Text("${activity.first}: ${activity.second}.")
+                                        Text("${stringResources get activity.first}: ${stringResources get activity.second}.")
                                     }
                                 }
                             }
@@ -81,7 +92,7 @@ class ExperiencesPage(
                                 target(ATarget.Blank)
                             }
                         ) {
-                            Text("${jobExperience.position} Certificate")
+                            Text("${stringResources get jobExperience.position} Certificate")
                         }
                     }
                 }
