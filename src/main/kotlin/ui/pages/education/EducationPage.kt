@@ -26,9 +26,19 @@ class EducationPage(
                     classes(EducationStyleSheet.education)
                 }
             ) {
-                H1 { Text(education.title) }
-                H2 { Text("${education.educationLevel} - ${education.site}") }
-                P { Text("${education.institute} - ${education.location}") }
+                H1 { Text(stringResources get education.title) }
+                H2 {
+                    Text(
+                        "${stringResources get education.educationLevel.toLowercaseString()} - " +
+                                (stringResources get education.site.toLowercaseString())
+                    )
+                }
+                P {
+                    Text(
+                        "${stringResources get education.institute} - " +
+                                (stringResources get education.location)
+                    )
+                }
                 P {
                     Time(
                         datetime = education.startDate.toUTCString()

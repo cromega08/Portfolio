@@ -95,6 +95,110 @@ enum class StringValues(
         "Practical knowledge about English language and native Spanish",
         "Conocimientos practicos sobre la lengua inglesa y nativo en el lenguaje español"
     ),
+    DIPLOMA_IN_MOBILE_APPLICATION_DEVELOPMENT(
+        "Diploma in Mobile Application Development",
+        "Diploma en Desarrollo de Aplicaciones Moviles"
+    ),
+    AUTONOMOUS_UNIVERSITY_OF_BUCARAMANGA(
+        "Autonomous University of Bucaramanga",
+        "Universidad Autónoma de Bucaramanga"
+    ),
+    BUCARAMANGA_SANTANDER_COLOMBIA(
+        "Bucaramanga, Santander, Colombia",
+        "Bucaramanga, Santander, Colombia"
+    ),
+    LABOR_TECHNICAL_DEGREE_WEB_DEVELOPMENT(
+        "Labor Technical Degree in Web Applications Development",
+        "Tecnico Laboral en Desarrollo de Aplicaciones Web"
+    ),
+    COMMERCIAL_AND_FINANCIAL_OPERATIONS_TECHNICIAN(
+        "Commercial and financial operations accounting Technician",
+        "Tecnico en Contabilizacion de Operaciones Comerciales y Financieras"
+    ),
+    SENA(
+        "SENA",
+        "SENA"
+    ),
+    BARRANCABERMEJA_SANTANDER_COLOMBIA(
+        "Barrancabermeja, Santander, Colombia",
+        "Barrancabermeja, Santander, Colombia"
+    ),
+    TECHNICAL_IN_BUSINESS_ADMINISTRATION(
+        "Technical Graduate Specialized in Business Administration",
+        "Bachiller Tecnico Especializado en Administracion de Negocios"
+    ),
+    DHG(
+        "Diego Hernandez de Gallegos (D.H.G.)",
+        "Diego Hernandez de Gallegos (D.H.G.)"
+    ),
+    DEPLOYMENT_OF_DOCKER_CONTAINERS(
+        "Deployment of Applications and Services in Docker Containers",
+        "Despliegue de Aplicaciones y Servicios en Contenedores Docker"
+    ),
+    ESPINAL_TOLIMA_COLOMBIA(
+        "Espinal, Tolima, Colombia",
+        "Espinal, Tolima, Colombia"
+    ),
+    IMPLEMENTATION_OF_NOSQL_DATABASE(
+        "Implementation of NoSQL Databases",
+        "Implementacion de Bases de Datos NoSQL"
+    ),
+    CALI_VDC_COLOMBIA(
+        "Cali, Valle del Cauca, Colombia",
+        "Cali, Valle del Cauca, Colombia"
+    ),
+    GREEN_DIGITAL_SKILLS(
+        "Green Digital Skills",
+        "Green Digital Skills"
+    ),
+    INCO_ACADEMY(
+        "INCO Academy",
+        "INCO Academy"
+    ),
+    ONLINE(
+        "Online",
+        "Online"
+    ),
+    SQL_ISLAND_COURSE_COMPLETE(
+        "SQL Island Course Complete",
+        "Curso SQL Island Completo"
+    ),
+    SQL_ISLAND(
+        "SQL Island",
+        "SQL Island"
+    ),
+    SOFTWARE_TEST_MANAGEMENT(
+        "Software Test Management",
+        "Manejo de Pruebas de Software"
+    ),
+    PALMIRA_VDC_COLOMBIA(
+        "Palmira, Valle del Cauca, Colombia",
+        "Palmira, Valle del Cauca, Colombia"
+    ),
+    APPLETS_DEVELOPMENT(
+        "Applets Development",
+        "Desarollo de Applets"
+    ),
+    PITALITO_HUILA_COLOMBIA(
+        "Pitalito, Huila, Colombia",
+        "Pitalito, Huila, Colombia"
+    ),
+    CONSTRUCTION_OF_DIGITAL_CONTENT_SKILLS(
+        "Development of Digital Skills for the Construction Of Digital Content",
+        "Desarrollo de Habilidades Digitales para la Construccion de Contenido Digital"
+    ),
+    BARRANQUILLA_ATLANTICO_COLOMBIA(
+        "Barranquilla, Atlantico, Colombia",
+        "Barranquilla, Atlantico, Colombia"
+    ),
+    INFORMATION_MANAGEMENT_SKILLS(
+        "Development of Digital Skills for Information Management",
+        "Desarrollo de Habilidades Digitales para la Gestion de la Informacion"
+    ),
+    SIIGO_SOFTWARE_IMPLEMENTATION(
+        "Implementation of SIIGO Accounting Software",
+        "Implementation of SIIGO Accounting Software"
+    ),
     FULL_TIME(
         "Full Time",
         "Tiempo Completo"
@@ -138,6 +242,26 @@ enum class StringValues(
     ON_SITE(
         "ON_SITE",
         "Presencial"
+    ),
+    BACHELOR(
+        "Bachelor",
+        "Pregrado"
+    ),
+    ASSOCIATE(
+        "Associate",
+        "Tecnico"
+    ),
+    HIGHSCHOOL_DEGREE(
+        "Highschool Degree",
+        "Bachiller"
+    ),
+    DIPLOMA(
+        "Diploma",
+        "Diploma"
+    ),
+    COURSE(
+        "Course",
+        "Curso"
     );
 
     companion object {

@@ -6,9 +6,10 @@ import androidx.compose.runtime.setValue
 import enums.Languages
 import enums.StringValues
 
-class StringResources
-{
-    var language: Languages by mutableStateOf(Languages.SPANISH)
+class StringResources(
+    initialLanguage: Languages
+) {
+    var language: Languages by mutableStateOf(initialLanguage)
     private val values: Map<String, StringValues> = StringValues.toMap()
 
     infix fun get(key: String): String =
