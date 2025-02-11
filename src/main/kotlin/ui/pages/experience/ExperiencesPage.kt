@@ -10,8 +10,11 @@ import ui.elements.Summary
 import ui.elements.Time
 import ui.pages.generic.GlobalStyleSheet
 import ui.pages.generic.Page
+import utils.StringResources
 
-class ExperiencesPage(controller: ExperiencesController) : Page<ExperiencesController>(controller)
+class ExperiencesPage(
+    controller: ExperiencesController, stringResources: StringResources
+) : Page<ExperiencesController>(controller, stringResources)
 {
     @Composable
     override fun PageMain() =

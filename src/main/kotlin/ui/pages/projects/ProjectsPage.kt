@@ -9,8 +9,11 @@ import org.jetbrains.compose.web.dom.*
 import ui.components.SectionScrollableFlexboxWrap
 import ui.pages.generic.GlobalStyleSheet
 import ui.pages.generic.Page
+import utils.StringResources
 
-class ProjectsPage(controller: ProjectsController) : Page<ProjectsController>(controller)
+class ProjectsPage(
+    controller: ProjectsController, stringResources: StringResources
+) : Page<ProjectsController>(controller, stringResources)
 {
     @Composable
     override fun PageMain()

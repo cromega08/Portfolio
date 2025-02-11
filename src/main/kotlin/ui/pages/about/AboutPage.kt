@@ -1,12 +1,14 @@
 package ui.pages.about
 
 import androidx.compose.runtime.Composable
-import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 import ui.pages.generic.GlobalStyleSheet
 import ui.pages.generic.Page
+import utils.StringResources
 
-class AboutPage(aboutController: AboutController) : Page<AboutController>(aboutController)
+class AboutPage(
+    controller: AboutController, stringResources: StringResources
+) : Page<AboutController>(controller, stringResources)
 {
     @Composable
     override fun PageMain() =

@@ -7,8 +7,11 @@ import org.jetbrains.compose.web.dom.*
 import ui.components.SectionScrollableFlexboxWrap
 import ui.elements.Time
 import ui.pages.generic.Page
+import utils.StringResources
 
-class EducationPage(educationController: EducationController) : Page<EducationController>(educationController)
+class EducationPage(
+    controller: EducationController, stringResources: StringResources
+) : Page<EducationController>(controller, stringResources)
 {
     @Composable
     override fun PageMain() =

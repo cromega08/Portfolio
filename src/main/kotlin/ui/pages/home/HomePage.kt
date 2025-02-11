@@ -5,8 +5,11 @@ import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 import ui.pages.generic.GlobalStyleSheet
 import ui.pages.generic.Page
+import utils.StringResources
 
-class HomePage(controller: HomeController) : Page<HomeController>(controller)
+class HomePage(
+    controller: HomeController, stringResources: StringResources
+) : Page<HomeController>(controller, stringResources)
 {
     @Composable
     override fun PageMain() =

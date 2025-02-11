@@ -1,14 +1,16 @@
 package ui.pages.generic
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import enums.UtilityButtonsInfo
 import org.jetbrains.compose.web.attributes.ATarget
 import org.jetbrains.compose.web.attributes.target
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 import ui.navigation.NavigationPages
+import utils.StringResources
 
-abstract class Page<C : Controller>(protected val controller: C)
+abstract class Page<C : Controller>(protected val controller: C, protected val stringResources: StringResources)
 {
     @Composable
     fun Body() {
