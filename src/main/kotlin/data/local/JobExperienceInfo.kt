@@ -45,8 +45,8 @@ val jobExperiences: Array<JobExperienceInfo> = arrayOf(
         company = "earth_hero",
         location = "usa",
         site = Site.REMOTE,
-        startDate = Date(year = 2023, month = 3, day = 15),
-        endDate = Date(year = 2024, month = 9, day = 20),
+        startDate = Date(year = 2023, month = 2, day = 15),
+        endDate = Date(year = 2024, month = 8, day = 20),
         description = "android_developer_description",
         activities =
             listOf(
@@ -63,8 +63,8 @@ val jobExperiences: Array<JobExperienceInfo> = arrayOf(
         company = "earth_hero",
         location = "usa",
         site = Site.REMOTE,
-        startDate = Date(year = 2023, month = 3, day = 15),
-        endDate = Date(year = 2024, month = 9, day = 20),
+        startDate = Date(year = 2023, month = 2, day = 15),
+        endDate = Date(year = 2024, month = 8, day = 20),
         description = "spanish_translator_description",
         activities =
             listOf(
