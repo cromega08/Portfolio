@@ -22,8 +22,8 @@ val higherEducation: Array<EducationInfo> = arrayOf(
         institute = "autonomous_university_of_bucaramanga",
         location = "bucaramanga_santander_colombia",
         site = Site.REMOTE,
-        startDate = Date(year = 2022, month = 5, day = 15),
-        endDate = Date(year = 2022, month = 12, day = 19),
+        startDate = Date(year = 2022, month = 4, day = 15),
+        endDate = Date(year = 2022, month = 11, day = 19),
         sources = listOf(
             "documents\\Certificado_Mision_TIC_2022_Complete.pdf",
             "documents\\Certificado_Mision_TIC_2022_C4_Movil.pdf"
@@ -35,8 +35,8 @@ val higherEducation: Array<EducationInfo> = arrayOf(
         institute = "autonomous_university_of_bucaramanga",
         location = "bucaramanga_santander_colombia",
         site = Site.REMOTE,
-        startDate = Date(year = 2022, month = 5, day = 15),
-        endDate = Date(year = 2022, month = 12, day = 19),
+        startDate = Date(year = 2022, month = 4, day = 15),
+        endDate = Date(year = 2022, month = 11, day = 19),
         sources = listOf(
             "documents\\Certificado_Mision_TIC_2022_Complete.pdf",
             "documents\\TItulo_UNAB_Técnico_Laboral_Web.pdf"
@@ -51,8 +51,8 @@ val mediumEducation: Array<EducationInfo> = arrayOf(
         institute = "sena",
         location = "barrancabermeja_santander_colombia",
         site = Site.ON_SITE,
-        startDate = Date(year = 2020, month = 2, day = 10),
-        endDate = Date(year = 2021, month = 11, day = 22),
+        startDate = Date(year = 2020, month = 1, day = 10),
+        endDate = Date(year = 2021, month = 10, day = 22),
         sources = listOf("Titulo_SENA_Tecnico_en_Contabilizacion_de_Operaciones_Comerciales_y_Financieras.pdf")
     ),
     EducationInfo(
@@ -61,8 +61,8 @@ val mediumEducation: Array<EducationInfo> = arrayOf(
         institute = "dhg",
         location = "barrancabermeja_santander_colombia",
         site = Site.ON_SITE,
-        startDate = Date(year = 2020, month = 1, day = 13),
-        endDate = Date(year = 2021, month = 12, day = 2),
+        startDate = Date(year = 2020, month = 0, day = 13),
+        endDate = Date(year = 2021, month = 11, day = 2),
         sources = listOf("documents\\Titulo_DHG_Tecnico_Gestion_Empresarial.pdf")
     )
 )
@@ -74,8 +74,8 @@ val lowerEducation: Array<EducationInfo> = arrayOf(
         institute = "sena",
         location = "espinal_tolima_colombia",
         site = Site.REMOTE,
-        startDate = Date(year = 2023, month = 4, day = 24),
-        endDate = Date(year = 2023, month = 5, day = 29),
+        startDate = Date(year = 2023, month = 3, day = 24),
+        endDate = Date(year = 2023, month = 4, day = 29),
         sources = listOf("documents\\Certificado_SENA_Despliegue_de_Aplicaciones_y_Servicios_en_Contenedores_Docker.pdf")
     ),
     EducationInfo(
@@ -84,8 +84,8 @@ val lowerEducation: Array<EducationInfo> = arrayOf(
         institute = "sena",
         location = "cali_vdc_colombia",
         site = Site.REMOTE,
-        startDate = Date(year = 2023, month = 4, day = 26),
-        endDate = Date(year = 2023, month = 5, day = 29),
+        startDate = Date(year = 2023, month = 3, day = 26),
+        endDate = Date(year = 2023, month = 4, day = 29),
         sources = listOf("documents\\Certificado_SENA_Implementacion_de_Bases_de_Datos_NOSQL.pdf")
     ),
     EducationInfo(
@@ -94,8 +94,8 @@ val lowerEducation: Array<EducationInfo> = arrayOf(
         institute = "inco_academy",
         location = "online",
         site = Site.REMOTE,
-        startDate = Date(year = 2023, month = 2, day = 6),
-        endDate = Date(year = 2023, month = 3, day = 13),
+        startDate = Date(year = 2023, month = 1, day = 6),
+        endDate = Date(year = 2023, month = 2, day = 13),
         sources = listOf("documents\\Certificado_GDS.pdf")
     ),
     EducationInfo(
@@ -104,8 +104,8 @@ val lowerEducation: Array<EducationInfo> = arrayOf(
         institute = "sql_island",
         location = "online",
         site = Site.REMOTE,
-        startDate = Date(year = 2023, month = 2, day = 19),
-        endDate = Date(year = 2023, month = 2, day = 19),
+        startDate = Date(year = 2023, month = 1, day = 19),
+        endDate = Date(year = 2023, month = 1, day = 19),
         sources = listOf("documents\\Certificate_SQL-Island.pdf")
     ),
     EducationInfo(
@@ -114,8 +114,8 @@ val lowerEducation: Array<EducationInfo> = arrayOf(
         institute = "sena",
         location = "palmira_vdc_colombia",
         site = Site.REMOTE,
-        startDate = Date(year = 2023, month = 3, day = 27),
-        endDate = Date(year = 2023, month = 4, day = 21),
+        startDate = Date(year = 2023, month = 2, day = 27),
+        endDate = Date(year = 2023, month = 3, day = 21),
         sources = listOf("documents\\Certificado_SENA_Manejo_de_Pruebas_de_Software.pdf")
     ),
     EducationInfo(
@@ -124,8 +124,8 @@ val lowerEducation: Array<EducationInfo> = arrayOf(
         institute = "sena",
         location = "pitalito_huila_colombia",
         site = Site.REMOTE,
-        startDate = Date(year = 2023, month = 4, day = 5),
-        endDate = Date(year = 2023, month = 5, day = 10),
+        startDate = Date(year = 2023, month = 3, day = 5),
+        endDate = Date(year = 2023, month = 4, day = 10),
         sources = listOf("documents\\Certificado_SENA_Desarrollo de Applets.pdf")
     ),
     EducationInfo(
@@ -134,8 +134,8 @@ val lowerEducation: Array<EducationInfo> = arrayOf(
         institute = "sena",
         location = "barranquilla_atlantico_colombia",
         site = Site.REMOTE,
-        startDate = Date(year = 2021, month = 8, day = 2),
-        endDate = Date(year = 2021, month = 8, day = 31),
+        startDate = Date(year = 2021, month = 7, day = 2),
+        endDate = Date(year = 2021, month = 7, day = 31),
         sources = listOf("documents\\Certificado_SENA_Construccion_de_Contenido_Digital.pdf")
     ),
     EducationInfo(
@@ -144,8 +144,8 @@ val lowerEducation: Array<EducationInfo> = arrayOf(
         institute = "sena",
         location = "bogota_dc_colombia",
         site = Site.REMOTE,
-        startDate = Date(year = 2021, month = 7, day = 19),
-        endDate = Date(year = 2021, month = 8, day = 24),
+        startDate = Date(year = 2021, month = 6, day = 19),
+        endDate = Date(year = 2021, month = 7, day = 24),
         sources = listOf("documents\\Certificado_SENA_Gestion_de_la_Informacion.pdf")
     ),
     EducationInfo(
@@ -154,8 +154,8 @@ val lowerEducation: Array<EducationInfo> = arrayOf(
         institute = "sena",
         location = "barrancabermeja_santander_colombia",
         site = Site.REMOTE,
-        startDate = Date(year = 0, month = 0, day = 0),
-        endDate = Date(year = 0, month = 0, day = 0),
+        startDate = Date(year = 2021, month = 5, day = 10),
+        endDate = Date(year = 2021, month = 6, day = 14),
         sources = listOf("documents\\Certificado_SENA_Implementacion_Software_Contable_Siigo.pdf")
     )
 )
