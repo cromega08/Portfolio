@@ -1,4 +1,5 @@
 import androidx.compose.runtime.remember
+import enums.Languages
 import org.jetbrains.compose.web.css.Style
 import org.jetbrains.compose.web.renderComposable
 import ui.navigation.NavigationController
@@ -29,7 +30,7 @@ import utils.StringResources
 
 fun main() {
     renderComposable(rootElementId = "root") {
-        val stringResources: StringResources = remember { StringResources() }
+        val stringResources: StringResources = remember { StringResources(Languages.ENGLISH) }
         val navigationController: NavigationController = remember { NavigationController(NavigationPages.Home) }
 
         Style(GlobalAnimations)
