@@ -90,6 +90,7 @@ class ExperiencesPage(
                             href = jobExperience.source,
                             attrs = {
                                 target(ATarget.Blank)
+                                attr("rel", "noopener noreferrer")
                             }
                         ) {
                             Text("${stringResources get jobExperience.position} Certificate")

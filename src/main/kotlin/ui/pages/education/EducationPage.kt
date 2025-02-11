@@ -59,6 +59,7 @@ class EducationPage(
                                 href = source,
                                 attrs = {
                                     target(ATarget.Blank)
+                                    attr("rel", "noopener noreferrer")
                                 }
                             ) { Text(source.split("\\").last()) }
                         }

@@ -58,6 +58,7 @@ class ProjectsPage(
                         href = repository.html_url,
                         attrs = {
                             target(ATarget.Blank)
+                            attr("rel", "noopener noreferrer")
                         }
                     ) { Text("Github Repository") }
                     P(
@@ -94,6 +95,7 @@ class ProjectsPage(
                                     href = repository.license.url,
                                     attrs = {
                                         target(ATarget.Blank)
+                                        attr("rel", "noopener noreferrer")
                                     }
                                 ) { Text(repository.license.name) }
                             else Text("No license")

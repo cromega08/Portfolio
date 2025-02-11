@@ -131,6 +131,7 @@ abstract class Page<C : Controller>(protected val controller: C, protected val s
                             href = utilityButtonInfo.href,
                             attrs = {
                                 target(ATarget.Blank)
+                                attr("rel", "noopener noreferrer")
                                 classes(GlobalStyleSheet.flexboxCenteredDefault, GlobalStyleSheet.utilityButtons)
                             }
                         ) {
