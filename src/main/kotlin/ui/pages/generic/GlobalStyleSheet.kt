@@ -71,6 +71,12 @@ object GlobalStyleSheet : StyleSheet()
             color(Color.black)
             style(LineStyle.Solid)
         }
+        media("(orientation: portrait)"){
+            self style {
+                width(6.vmax)
+                height(6.vmax)
+            }
+        }
     }
 
     val utilityButtonsIcon by style {

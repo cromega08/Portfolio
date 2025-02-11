@@ -36,7 +36,7 @@ class HomePage(
                             classes(GlobalStyleSheet.flexboxCenteredDefault, HomeStyleSheet.flipCardSide, HomeStyleSheet.flipCardFront)
                         }
                     ) {
-                        val imageText: String = "Cristian Personal Photo"
+                        val imageText: String = stringResources get "cristian_personal_photo"
                         Img(
                             src = "images\\personal_photo_transparent.webp",
                             alt = imageText,
@@ -51,7 +51,7 @@ class HomePage(
                             classes(GlobalStyleSheet.flexboxCenteredDefault, HomeStyleSheet.flipCardSide, HomeStyleSheet.flipCardBack)
                         }
                     ) {
-                        val imageText: String = "Cromega's Logo Image"
+                        val imageText: String = stringResources get "cromega_logo_image"
 
                         Img(
                             src = "images\\cromega_logo_transparent.webp",
@@ -80,7 +80,7 @@ class HomePage(
                         }
                     }
                 ) {
-                    Text("Hello, I am ")
+                    Text("${stringResources get "hello_i_am"} ")
 
                     Span(
                         attrs = {
@@ -104,7 +104,7 @@ class HomePage(
                     ) {
                         Text(controller.developerTextDynamic)
                     }
-                    Text(" Developer")
+                    Text(" ${stringResources get "developer"}")
                 }
             }
         }

@@ -8,15 +8,15 @@ import enums.StringValues
 
 class StringResources
 {
-    var language: Languages by mutableStateOf(Languages.ENGLISH)
+    var language: Languages by mutableStateOf(Languages.SPANISH)
     private val values: Map<String, StringValues> = StringValues.toMap()
 
-    fun get(key: String): String =
-        values[key]
+    infix fun get(key: String): String =
+        values[key.lowercase().trim()]
             .runCatching {
                 when(language) {
-                    Languages.ENGLISH -> this!!.english
-                    Languages.SPANISH -> this!!.spanish
+                    Languages.ENGLISH -> { this!!.english }
+                    Languages.SPANISH -> { this!!.spanish }
                 }
             }.getOrDefault("")
 }

@@ -1,8 +1,8 @@
 package enums
 
 enum class StringValues(
-    val spanish: String,
-    val english: String
+    val english: String,
+    val spanish: String
 ) {
     CRISTIAN_PERSONAL_PHOTO("Cristian Personal Photo", "Foto Personal de Cristian"),
     CROMEGA_LOGO_IMAGE("Cromega's Logo Image", "Logo de Cromega"),

@@ -2,6 +2,7 @@ package ui.pages.generic
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
+import enums.Languages
 import enums.UtilityButtonsInfo
 import org.jetbrains.compose.web.attributes.ATarget
 import org.jetbrains.compose.web.attributes.target
@@ -95,22 +96,53 @@ abstract class Page<C : Controller>(protected val controller: C, protected val s
                     classes(GlobalStyleSheet.flexboxCenteredDefault, GlobalStyleSheet.flexboxRow)
                 }
             ) {
-                for (utilityButtonInfo in UtilityButtonsInfo.asList()) {
-                    A (
-                        href = utilityButtonInfo.href,
-                        attrs = {
-                            target(ATarget.Blank)
-                            classes(GlobalStyleSheet.flexboxCenteredDefault, GlobalStyleSheet.utilityButtons)
-                        }
-                    ) {
-                        Img(
-                            src = utilityButtonInfo.icon,
-                            alt = utilityButtonInfo.text,
+                for (utilityButtonInfo in UtilityButtonsInfo.entries) {
+                    if (utilityButtonInfo.href.isBlank())
+                    {
+                        Button(
                             attrs = {
-                                title(utilityButtonInfo.text)
-                                classes(GlobalStyleSheet.utilityButtonsIcon)
+                                classes(GlobalStyleSheet.flexboxCenteredDefault, GlobalStyleSheet.utilityButtons)
+                                style {
+                                    if (utilityButtonInfo.text != stringResources.language.toString())
+                                    {
+                                        display(DisplayStyle.None)
+                                    }
+                                }
+                                onClick {
+                                    stringResources.language =
+                                        if (stringResources.language == Languages.ENGLISH) Languages.SPANISH
+                                        else Languages.ENGLISH
+                                }
                             }
-                        )
+                        ) {
+                            Img(
+                                src = utilityButtonInfo.icon,
+                                alt = utilityButtonInfo.text,
+                                attrs = {
+                                    title(utilityButtonInfo.text)
+                                    classes(GlobalStyleSheet.utilityButtonsIcon)
+                                }
+                            )
+                        }
+                    }
+                    else
+                    {
+                        A (
+                            href = utilityButtonInfo.href,
+                            attrs = {
+                                target(ATarget.Blank)
+                                classes(GlobalStyleSheet.flexboxCenteredDefault, GlobalStyleSheet.utilityButtons)
+                            }
+                        ) {
+                            Img(
+                                src = utilityButtonInfo.icon,
+                                alt = utilityButtonInfo.text,
+                                attrs = {
+                                    title(utilityButtonInfo.text)
+                                    classes(GlobalStyleSheet.utilityButtonsIcon)
+                                }
+                            )
+                        }
                     }
                 }
             }

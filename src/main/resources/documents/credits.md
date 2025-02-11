@@ -8,3 +8,5 @@ Following file is a documentation to list all the credits for resources download
 - [Document icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/document)
 - [Zipper icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/zipper)
 - [Key icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/key)
+- [English icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/english)
+- [Spanish icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/spanish)
