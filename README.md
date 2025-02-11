@@ -1,8 +1,25 @@
-[![official project](http://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-# [Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform) web application project template
 
-This template uses the HTML Compose library.
+# [CJRG | Cromega] Portfolio
 
-- `./gradlew jsBrowserRun` - run application in a browser
-- `./gradlew jsBrowserProductionWebpack` - produce the output in `build/dist`
+This **Portfolio** is a website designed for [Cromega](https://www.github.com/Cromega08) presentation.
+
+The website include information about the job experiences, projects, education, and even small personal information.
+
+## Usage
+
+
+## Tech Stack
+
+- Languages: [Kotlin](https://kotlinlang.org), [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_overview).
+
+- Framework: [Compose HTML](https://github.com/JetBrains/compose-multiplatform/tree/master/tutorials#html), [Jetpack Compose](https://developer.android.com/compose).
+
+- Build Tools: [Gradle](https://gradle.org).
+
+## License
+
+- [Apache v2.0](http://www.apache.org/licenses/LICENSE-2.0) (Inherited from library)
+
+## Authors
+
+- [@Cromega08](https://www.github.com/Cromega08)
