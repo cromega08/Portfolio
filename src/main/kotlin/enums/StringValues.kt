@@ -125,7 +125,7 @@ enum class StringValues(
     ),
     TECHNICAL_IN_BUSINESS_ADMINISTRATION(
         "Technical Graduate Specialized in Business Administration",
-        "Bachiller Tecnico Especializado en Administracion de Negocios"
+        "Bachiller Tecnico Especializado en Administracion de Empresas"
     ),
     DHG(
         "Diego Hernandez de Gallegos (D.H.G.)",
@@ -197,7 +197,37 @@ enum class StringValues(
     ),
     SIIGO_SOFTWARE_IMPLEMENTATION(
         "Implementation of SIIGO Accounting Software",
-        "Implementation of SIIGO Accounting Software"
+        "Implementacion delk Software Contable SIIGO"
+    ),
+    ABOUT_ME_TITLE(
+        "About Me",
+        "Sobre Mi"
+    ),
+    ABOUT_ME_FIRST_PARAGRAPH(
+        "Hello, I'm Cristian Ramirez (or Cromega [my alias online]). Started in programming with 18 years, " +
+                "learning python and using it to create scripts for my accounting classes at that time and little things " +
+                "like a P2P chat program with websockets.",
+        "Hola, soy Cristian Ramirez (o Cromega [mi alias online]). Inicie en la programacion con 18 años, " +
+                "aprendiendo pyton y usandolo para crear pequeños scripts para mis clases de contabilidad de ese momento, y otras pequeñas cosas " +
+                "como un programa de chat P2P (utilizando websockets)."
+    ),
+    ABOUT_ME_SECOND_PARAGRAPH(
+        "After graduating, I had the opportunity to learn in depth about application development thanks to the \"Mision TIC - 2022\" scholarship program. " +
+                "Through these process learned about \"Android\" and \"Web\" application development. " +
+                "Developed my first applications and started a real path in coding.",
+        "Luego de graduarme, tuve la oportunidad de aprender en profundidad sobre el desarrollo de aplicaciones gracias a la beca del programa \"Mision TIC - 2022\". " +
+                "Durante este tiempo aprendi sobre el desarrollo de aplicaciones \"Android\" y \"Web\". " +
+                "Desarrolle mi primeras aplicaciones e inicie mi camino en la programacion."
+    ),
+    ABOUT_ME_THIRD_PARAGRAPH(
+        "After this, worked on different projects, and even make a volunteer, " +
+                "where focused on improving my abilities and improving the applications whose I been part of. " +
+                "Developed features, maintained code, refactored complete functionalities along with other developers; " +
+                "and even (my most valuable experience) refactored the dependency system of an app due to the shutdown of the \"Bintray\" repository.",
+        "Despues de esto, trabaje en distintos proyectos, incluyendo voluntariados, " +
+                "donde me concentre en mejorar mis habilidades y mejorar las aplicaciones en las que participe. " +
+                "Desarrolle funcionalidades, mantuve codigo, refactorize funcionalidades completas junto a otros desarrolladores; " +
+                "e incluso (como mi experiencia mas valiosa) refactorize el sistema de depndencias de una aplicacion debido a la caida del repositorio \"Bintray\"."
     ),
     FULL_TIME(
         "Full Time",
