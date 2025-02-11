@@ -1,8 +1,6 @@
 package ui.navigation
 
-import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.mutableStateListOf
-import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.*
 import androidx.compose.runtime.snapshots.SnapshotStateList
 
 class NavigationController(
@@ -10,10 +8,7 @@ class NavigationController(
 ) {
     val pages: List<NavigationPages> = NavigationPages.asList()
 
-    private val currentPageState: MutableState<NavigationPages> = mutableStateOf(initialNavigationPages)
-    var currentPage: NavigationPages
-        get() = currentPageState.value
-        private set(value) { currentPageState.value = value }
+    var currentPage by mutableStateOf(initialNavigationPages)
 
     fun isCurrentPage(page: NavigationPages): Boolean = (currentPage == page)
 
