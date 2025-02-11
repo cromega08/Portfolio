@@ -99,7 +99,7 @@ class ProjectsPage(
                             else Text("No license")
                         }
 
-                        Small { Text(repository.created_at) }
+                        Small { Text(repository.created_at.split("T")[0]) }
                     }
                 }
             }
