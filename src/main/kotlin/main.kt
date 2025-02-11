@@ -3,6 +3,10 @@ import org.jetbrains.compose.web.css.Style
 import org.jetbrains.compose.web.renderComposable
 import ui.navigation.NavigationController
 import ui.navigation.NavigationPages
+import ui.pages.about.AboutAnimations
+import ui.pages.about.AboutController
+import ui.pages.about.AboutPage
+import ui.pages.about.AboutStyleSheet
 import ui.pages.education.EducationAnimations
 import ui.pages.education.EducationController
 import ui.pages.education.EducationPage
@@ -45,6 +49,11 @@ fun main() {
                 Style(EducationAnimations)
                 Style(EducationStyleSheet)
                 EducationPage(EducationController(navigationController)).Body()
+            }
+            NavigationPages.About -> {
+                Style(AboutAnimations)
+                Style(AboutStyleSheet)
+                AboutPage(AboutController(navigationController)).Body()
             }
             else -> {
                 Style(HomeAnimations)
