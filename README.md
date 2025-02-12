@@ -7,6 +7,7 @@ The website include information about the job experiences, projects, education, 
 
 ## Usage
 
+To see this website, simply click [this link](https://cromega08.github.io/Portfolio/) and see it live.
 
 ## Tech Stack
 
