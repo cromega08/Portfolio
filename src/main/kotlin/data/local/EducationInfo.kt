@@ -39,7 +39,7 @@ val higherEducation: Array<EducationInfo> = arrayOf(
         endDate = Date(year = 2022, month = 11, day = 19),
         sources = listOf(
             "documents\\Certificado_Mision_TIC_2022_Complete.pdf",
-            "documents\\TItulo_UNAB_Técnico_Laboral_Web.pdf"
+            "documents\\Titulo_UNAB_Técnico_Laboral_Web.pdf"
         )
     )
 )
@@ -47,13 +47,14 @@ val higherEducation: Array<EducationInfo> = arrayOf(
 val mediumEducation: Array<EducationInfo> = arrayOf(
     EducationInfo(
         title = "commercial_and_financial_operations_technician",
+
         educationLevel = EducationLevel.ASSOCIATE,
         institute = "sena",
         location = "barrancabermeja_santander_colombia",
         site = Site.ON_SITE,
         startDate = Date(year = 2020, month = 1, day = 10),
         endDate = Date(year = 2021, month = 10, day = 22),
-        sources = listOf("Titulo_SENA_Tecnico_en_Contabilizacion_de_Operaciones_Comerciales_y_Financieras.pdf")
+        sources = listOf("documents\\Titulo_SENA_Tecnico_en_Contabilizacion_de_Operaciones_Comerciales_y_Financieras.pdf")
     ),
     EducationInfo(
         title = "technical_in_business_administration",

@@ -72,7 +72,7 @@ abstract class Page<C : Controller>(protected val controller: C, protected val s
                           }
                       }
                     ) {
-                        Text(value = page.toString())
+                        Text(stringResources get page.toString().lowercase())
                     }
                 }
             }

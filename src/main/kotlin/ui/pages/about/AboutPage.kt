@@ -21,7 +21,7 @@ class AboutPage(
                 attrs = {
                     classes(AboutStyleSheet.header)
                 }
-            ) { Text(stringResources get "about_me_title") }
+            ) { Text(stringResources get "about") }
             P(
                 attrs = {
                     classes(AboutStyleSheet.paragraph)

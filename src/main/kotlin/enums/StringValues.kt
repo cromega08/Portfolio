@@ -199,7 +199,7 @@ enum class StringValues(
         "Implementation of SIIGO Accounting Software",
         "Implementacion delk Software Contable SIIGO"
     ),
-    ABOUT_ME_TITLE(
+    ABOUT(
         "About Me",
         "Sobre Mi"
     ),
@@ -228,6 +228,22 @@ enum class StringValues(
                 "donde me concentre en mejorar mis habilidades y mejorar las aplicaciones en las que participe. " +
                 "Desarrolle funcionalidades, mantuve codigo, refactorize funcionalidades completas junto a otros desarrolladores; " +
                 "e incluso (como mi experiencia mas valiosa) refactorize el sistema de depndencias de una aplicacion debido a la caida del repositorio \"Bintray\"."
+    ),
+    HOME(
+        "Home",
+        "Principal"
+    ),
+    EXPERIENCE(
+        "Experiences",
+        "Experiencias"
+    ),
+    PROJECTS(
+        "Projects",
+        "Proyectos"
+    ),
+    EDUCATION(
+        "Education",
+        "Estudios"
     ),
     FULL_TIME(
         "Full Time",
