@@ -48,60 +48,63 @@ class ProjectsPage(
                 },
                 dataForElements = controller.repositories.toList()
             ) { repository ->
-                Article(
-                    attrs = {
-                        classes(ProjectsStyleSheet.project)
-                    }
-                ) {
-                    H1 { Text(repository.name) }
-                    A(
-                        href = repository.html_url,
+                if(repository.name.lowercase().contains(controller.query.lowercase()))
+                {
+                    Article(
                         attrs = {
-                            target(ATarget.Blank)
-                            attr("rel", "noopener noreferrer")
-                        }
-                    ) { Text("Github Repository") }
-                    P(
-                        attrs = {
-                            style {
-                                width(100.percent)
-                            }
+                            classes(ProjectsStyleSheet.project)
                         }
                     ) {
-                        if (repository.description != null) Text(repository.description)
-                        else Span(
+                        H1 { Text(repository.name) }
+                        A(
+                            href = repository.html_url,
+                            attrs = {
+                                target(ATarget.Blank)
+                                attr("rel", "noopener noreferrer")
+                            }
+                        ) { Text("Github Repository") }
+                        P(
                             attrs = {
                                 style {
-                                    color(Color.black)
-                                    opacity(80.percent)
+                                    width(100.percent)
                                 }
                             }
-                        ) { Text("No description available...") }
-                    }
-                    P(
-                        attrs = {
-                            style {
-                                width(100.percent)
-                                display(DisplayStyle.Flex)
-                                flexDirection(FlexDirection.Row)
-                                justifyContent(JustifyContent.SpaceBetween)
-                                alignItems(AlignItems.Center)
-                            }
-                        }
-                    ) {
-                        Small {
-                            if (repository.license != null)
-                                A(
-                                    href = repository.license.url,
-                                    attrs = {
-                                        target(ATarget.Blank)
-                                        attr("rel", "noopener noreferrer")
+                        ) {
+                            if (repository.description != null) Text(repository.description)
+                            else Span(
+                                attrs = {
+                                    style {
+                                        color(Color.black)
+                                        opacity(80.percent)
                                     }
-                                ) { Text(repository.license.name) }
-                            else Text("No license")
+                                }
+                            ) { Text("No description available...") }
                         }
+                        P(
+                            attrs = {
+                                style {
+                                    width(100.percent)
+                                    display(DisplayStyle.Flex)
+                                    flexDirection(FlexDirection.Row)
+                                    justifyContent(JustifyContent.SpaceBetween)
+                                    alignItems(AlignItems.Center)
+                                }
+                            }
+                        ) {
+                            Small {
+                                if (repository.license != null)
+                                    A(
+                                        href = repository.license.url,
+                                        attrs = {
+                                            target(ATarget.Blank)
+                                            attr("rel", "noopener noreferrer")
+                                        }
+                                    ) { Text(repository.license.name) }
+                                else Text("No license")
+                            }
 
-                        Small { Text(repository.created_at.split("T")[0]) }
+                            Small { Text(repository.created_at.split("T")[0]) }
+                        }
                     }
                 }
             }

@@ -64,7 +64,7 @@ abstract class Page<C : Controller>(protected val controller: C, protected val s
                                   backgroundColor(Color.white)
                               }
 
-                              fontSize(2.cssRem)
+                              fontSize(1.5.cssRem)
                           }
 
                           onClick {

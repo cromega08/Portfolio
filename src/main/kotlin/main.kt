@@ -1,5 +1,7 @@
 import androidx.compose.runtime.remember
 import enums.Languages
+import kotlinx.browser.document
+import kotlinx.browser.window
 import org.jetbrains.compose.web.css.Style
 import org.jetbrains.compose.web.renderComposable
 import ui.navigation.NavigationController

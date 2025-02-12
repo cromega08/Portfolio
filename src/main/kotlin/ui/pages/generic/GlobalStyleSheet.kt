@@ -12,7 +12,7 @@ object GlobalStyleSheet : StyleSheet()
         }
 
         "body, #root" style {
-            overflow("hidden")
+//            overflow("hidden")
         }
 
         "body" style {
